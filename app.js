@@ -5,8 +5,8 @@ var app = express();
 var OAuth2 = googleapis.auth.OAuth2;
 
 var oauth2Client = new OAuth2(
-	'xx', 
-	'xx', 
+	'???', 
+	'???', 
 	'http://localhost:3000/oauth/google/callback');
 
 

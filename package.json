@@ -4,6 +4,7 @@
   "private": "true",
   "dependencies": {
     "googleapis":"*",
-    "express":"*"
+    "express":"*",
+    "cookieparser":"*"
   }
 }
