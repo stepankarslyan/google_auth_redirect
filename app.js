@@ -1,12 +1,20 @@
 var express = require("express");
 var googleapis = require("googleapis");
+var argv = require('optimist')
+    .default({ 
+      listen: 3001,
+      pidFolder: "/tmp/process_manager" 
+    })
+    .argv;
+
+
 var app = express();
 
 var OAuth2 = googleapis.auth.OAuth2;
 
 var oauth2Client = new OAuth2(
-	'???', 
-	'???', 
+	'xxx', 
+	'xxx', 
 	'http://localhost:3000/oauth/google/callback');
 
 
@@ -22,7 +30,7 @@ app.get("/", function(req, res) {
   res.redirect(url);
 });
 
-var server = app.listen(3001, function() {
-  console.log("Listening on port 3001...");
+var server = app.listen(argv.listen, function() {
+  console.log("Listening on port " + argv.listen + "...");
 });
 

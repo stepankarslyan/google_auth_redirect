@@ -5,6 +5,7 @@
   "dependencies": {
     "googleapis":"*",
     "express":"*",
-    "cookieparser":"*"
+    "cookieparser":"*",
+    "optimist":"*"
   }
 }
